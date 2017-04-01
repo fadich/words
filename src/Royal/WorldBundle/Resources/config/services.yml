@@ -1,0 +1,4 @@
+services:
+#    royal_world.example:
+#        class: Royal\WorldBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

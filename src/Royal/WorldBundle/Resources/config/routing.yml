@@ -1,0 +1,3 @@
+royal_world_homepage:
+    path:     /
+    defaults: { _controller: RoyalWorldBundle:Default:index }
