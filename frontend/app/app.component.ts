@@ -15,6 +15,6 @@ import {MainMenuComponent} from './menu/main-menu.component'
 })
 
 export class AppComponent {
-    constructor (public loader: GeneralLoaderService) {
+    constructor (public loader:GeneralLoaderService) {
     }
 }
