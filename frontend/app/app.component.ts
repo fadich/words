@@ -1,7 +1,9 @@
 import {Component} from 'angular2/core';
 
+import {HeaderComponent} from './header/header.component'
+import {MainComponent} from './main-page/main.component'
 import {GeneralLoaderService} from './loader/general-loader.service'
-import {MainMenuComponent} from './menu/main-menu.component'
+import {GeneralLoaderComponent} from './loader/general-loader.component'
 
 @Component({
     selector: 'app-words',
@@ -10,11 +12,13 @@ import {MainMenuComponent} from './menu/main-menu.component'
         GeneralLoaderService,
     ],
     directives: [
-        MainMenuComponent
+        HeaderComponent,
+        MainComponent,
+        GeneralLoaderComponent,
     ],
 })
 
 export class AppComponent {
-    constructor (public loader:GeneralLoaderService) {
+    constructor (public gLoader:GeneralLoaderService) {
     }
 }

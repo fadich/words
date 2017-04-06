@@ -3,13 +3,14 @@ import { Injectable } from 'angular2/core';
 @Injectable()
 
 export class GeneralLoaderService {
-    public status:string = 'hidden';
+    public status:boolean = true;
+    public selector = "<general-loader></general-loader>";
 
     public start() {
-        this.status = '';
+        this.status = true;
     }
 
     public stop() {
-        this.status = 'hidden';
+        this.status = false;
     }
 }
